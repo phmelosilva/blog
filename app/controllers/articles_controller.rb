@@ -48,6 +48,6 @@ class ArticlesController < ApplicationController
   private
     def article_params
       # params.expect(article: [:title, :body]) -> Método que estava no Tutorial, abaixo é o método correto
-      params.require(:article).permit(:title, :body)
+      params.require(:article).permit(:title, :body, :status)
     end
 end
